@@ -52,6 +52,7 @@ export default function Nav() {
           href="https://github.com/Nainounen/blind-spot"
           target="_blank"
           rel="noreferrer"
+          className="nav-github"
           style={{
             color: "var(--text-secondary)", fontSize: 13,
             fontFamily: "var(--font-dm-mono)",

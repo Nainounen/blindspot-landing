@@ -147,6 +147,7 @@ body::before {
   /* Nav */
   .nav-inner { padding: 0 20px !important; }
   .nav-links-desktop { display: none !important; }
+  .nav-github { display: none !important; }
 
   /* Section horizontal padding */
   .mobile-section {
