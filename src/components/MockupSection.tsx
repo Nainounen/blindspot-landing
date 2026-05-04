@@ -63,7 +63,7 @@ export default function MockupSection() {
     <section style={{ padding: "80px 40px", display: "flex", flexDirection: "column", alignItems: "center", position: "relative", zIndex: 1 }}>
       <div style={{
         fontSize: 11, fontFamily: "var(--font-dm-mono)", textTransform: "uppercase",
-        letterSpacing: "0.1em", color: "var(--text-tertiary)", marginBottom: 32,
+        letterSpacing: "0.1em", color: "var(--text-tertiary)", marginBottom: 56,
         display: "flex", alignItems: "center", gap: 12,
       }}>
         <span style={{ display: "block", width: 40, height: 1, background: "var(--border)" }} />
