@@ -9,7 +9,11 @@ const faqs = [
   },
   {
     q: "Which AI models does BlindSpot support?",
-    a: "OpenAI (GPT models), Anthropic (Claude), Google Gemini, and local Ollama models. You can switch providers from the menu bar in one click without restarting the app. Ollama users need no API key — the model runs entirely on your Mac.",
+    a: "OpenAI (GPT models), Anthropic (Claude), Google Gemini, xAI Grok, DeepSeek, and local Ollama models. You can switch providers from the menu bar in one click without restarting the app. Ollama and DeepSeek local users need no API key — the model runs entirely on your Mac.",
+  },
+  {
+    q: "Does BlindSpot cost anything?",
+    a: "Nothing. BlindSpot is free and open source under the MIT license. The source code is on GitHub. The only costs you might incur are the API fees charged by whichever provider you connect — OpenAI, Anthropic, Gemini, or Grok. Ollama and local DeepSeek models are completely free to run.",
   },
   {
     q: "Does BlindSpot send my API keys to a server?",

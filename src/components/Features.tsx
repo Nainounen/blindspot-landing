@@ -31,6 +31,8 @@ export default function Features() {
               { label: "OpenAI", dotClass: "#10a37f" },
               { label: "Anthropic", dotClass: "#c97b4b" },
               { label: "Gemini", dotClass: "#4285f4" },
+              { label: "Grok", dotClass: "#e8e8e8" },
+              { label: "DeepSeek", dotClass: "#4d6cf5" },
               { label: "Ollama", dotClass: "#a0a0a0" },
             ].map(({ label, dotClass }) => (
               <span key={label} style={{ display: "flex", alignItems: "center", gap: 7, background: "rgba(255,255,255,0.05)", border: "1px solid var(--border)", borderRadius: 100, padding: "6px 14px", fontSize: 12.5, color: "var(--text-secondary)", fontFamily: "var(--font-dm-sans)" }}>

@@ -61,7 +61,7 @@ export default function Hero() {
           lineHeight: 1.65,
           marginBottom: 48,
         }}>
-          Select text in any macOS app. Press ⌘⇧Space. Get an AI answer from OpenAI, Anthropic, Gemini, or local Ollama in a floating overlay that no screen recorder can capture.
+          Select text in any macOS app. Press ⌘⇧Space. Get an AI answer from OpenAI, Anthropic, Gemini, Grok, DeepSeek, or local Ollama in a floating overlay that no screen recorder can capture. Free and open source.
         </p>
 
         <div className="hero-animate-3" style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20, flexWrap: "wrap", justifyContent: "center" }}>

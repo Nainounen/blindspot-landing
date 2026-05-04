@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | BlindSpot",
   },
   description:
-    "BlindSpot is a free, open-source macOS app that delivers instant AI answers through a floating overlay completely hidden from every screen recorder. Supports OpenAI, Anthropic, Gemini, and local Ollama models.",
+    "BlindSpot is a free, open-source macOS app that delivers instant AI answers through a floating overlay completely hidden from every screen recorder. Supports OpenAI, Anthropic, Gemini, Grok, DeepSeek, and local Ollama models.",
   keywords: [
     "AI overlay macOS",
     "screen recorder invisible",
@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     "OpenAI macOS overlay",
     "NSWindowSharingNone",
     "invisible AI tool",
+    "Grok macOS",
+    "DeepSeek macOS",
+    "free open source AI tool",
   ],
   authors: [{ name: "BlindSpot" }],
   creator: "BlindSpot",
@@ -49,7 +52,7 @@ export const metadata: Metadata = {
     siteName: "BlindSpot",
     title: "BlindSpot — AI Answers Invisible to Screen Recorders",
     description:
-      "A free macOS app that puts AI answers in a floating overlay no screen recorder can capture. Works with OpenAI, Anthropic, Gemini, and Ollama.",
+      "A free, open-source macOS app that puts AI answers in a floating overlay no screen recorder can capture. Works with OpenAI, Anthropic, Gemini, Grok, DeepSeek, and Ollama.",
     images: [
       {
         url: "/og-image.png",
@@ -63,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BlindSpot — AI Answers Invisible to Screen Recorders",
     description:
-      "A free macOS app that puts AI answers in a floating overlay no screen recorder can capture. Works with OpenAI, Anthropic, Gemini, and Ollama.",
+      "A free, open-source macOS app that puts AI answers in a floating overlay no screen recorder can capture. Works with OpenAI, Anthropic, Gemini, Grok, DeepSeek, and Ollama.",
     images: ["/og-image.png"],
   },
   alternates: {
@@ -92,14 +95,15 @@ const jsonLd = [
       priceCurrency: "USD",
     },
     description:
-      "BlindSpot is a free macOS app that delivers AI answers through a floating overlay excluded from screen capture at the compositor level via NSWindowSharingNone. Supports OpenAI, Anthropic, Gemini, and local Ollama models.",
+      "BlindSpot is a free, open-source macOS app that delivers AI answers through a floating overlay excluded from screen capture at the compositor level via NSWindowSharingNone. Supports OpenAI, Anthropic, Gemini, Grok, DeepSeek, and local Ollama models.",
     url: BASE_URL,
     downloadUrl: "https://github.com/Nainounen/blind-spot/releases/latest",
     license: "https://github.com/Nainounen/blind-spot/blob/main/LICENSE",
     featureList: [
       "Invisible to screen recorders via NSWindowSharingNone",
       "Works in every macOS app via the Accessibility API",
-      "Supports OpenAI, Anthropic, Gemini, and Ollama",
+      "Supports OpenAI, Anthropic, Gemini, Grok, DeepSeek, and Ollama",
+      "Free and open source under the MIT license",
       "API keys stored locally with mode 600",
       "One-line Homebrew install",
     ],
