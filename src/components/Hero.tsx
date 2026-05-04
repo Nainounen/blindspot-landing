@@ -105,7 +105,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="hero-animate-4" style={{
+        <div className="hero-animate-4 hero-meta" style={{
           fontSize: 12,
           color: "rgba(255,255,255,0.28)",
           fontFamily: "var(--font-dm-mono)",

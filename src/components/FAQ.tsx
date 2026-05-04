@@ -23,7 +23,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" style={{ padding: "80px 40px 120px", maxWidth: 1200, margin: "0 auto" }}>
+    <section id="faq" className="mobile-section" style={{ padding: "80px 40px 120px", maxWidth: 1200, margin: "0 auto" }}>
       <div className="reveal">
         <div style={{
           fontSize: 11, fontFamily: "var(--font-dm-mono)", textTransform: "uppercase",
@@ -44,7 +44,7 @@ export default function FAQ() {
 
       <div className="reveal" style={{ transitionDelay: "0.1s" }}>
         {faqs.map((item, i) => (
-          <div key={i} style={{
+          <div key={i} className="faq-row" style={{
             borderTop: "1px solid var(--border)",
             padding: "32px 0",
             display: "grid",

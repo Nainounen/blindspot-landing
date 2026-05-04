@@ -12,6 +12,7 @@ export default function Nav() {
 
   return (
     <nav
+      className="nav-inner"
       style={{
         position: "fixed",
         top: 0, left: 0, right: 0,

@@ -142,3 +142,43 @@ body::before {
 .hero-animate-4 { animation: fadeUp 0.7s ease 0.32s both; }
 .hero-animate-5 { animation: fadeUp 0.7s ease 0.42s both; }
 .hotkey-animate { animation: fadeDown 1s ease 1.5s both; }
+
+@media (max-width: 768px) {
+  /* Nav */
+  .nav-inner { padding: 0 20px !important; }
+  .nav-links-desktop { display: none !important; }
+
+  /* Section horizontal padding */
+  .mobile-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* HowItWorks: 3-col → 1-col */
+  .how-grid { grid-template-columns: 1fr !important; }
+
+  /* Features: 12-col → 1-col, reset all column spans */
+  .features-grid { grid-template-columns: 1fr !important; }
+  .features-grid > div { grid-column: span 1 !important; }
+
+  /* RecorderSection: 2-col → 1-col */
+  .recorder-grid { grid-template-columns: 1fr !important; }
+  .recorder-bar-label { margin-left: 0 !important; }
+
+  /* FAQ: 2-col → 1-col */
+  .faq-row {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* Footer: horizontal → vertical */
+  .footer-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 28px !important;
+  }
+  .footer-links { flex-wrap: wrap !important; gap: 16px !important; }
+
+  /* Hero meta row */
+  .hero-meta { flex-wrap: wrap !important; justify-content: center !important; }
+}

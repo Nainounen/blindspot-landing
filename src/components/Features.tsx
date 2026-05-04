@@ -1,6 +1,6 @@
 export default function Features() {
   return (
-    <section id="features" style={{ padding: "80px 40px 120px", maxWidth: 1200, margin: "0 auto" }}>
+    <section id="features" className="mobile-section" style={{ padding: "80px 40px 120px", maxWidth: 1200, margin: "0 auto" }}>
       <div className="reveal">
         <div style={{ fontSize: 11, fontFamily: "var(--font-dm-mono)", textTransform: "uppercase", letterSpacing: "0.1em", color: "oklch(0.72 0.18 285)", marginBottom: 20, display: "flex", alignItems: "center", gap: 10 }}>
           <span style={{ display: "block", width: 24, height: 1, background: "oklch(0.72 0.18 285)" }} />
@@ -11,7 +11,7 @@ export default function Features() {
         </h2>
       </div>
 
-      <div className="reveal" style={{ display: "grid", gridTemplateColumns: "repeat(12, 1fr)", gap: 2, background: "var(--border)", borderRadius: 20, overflow: "hidden", transitionDelay: "0.1s" }}>
+      <div className="reveal features-grid" style={{ display: "grid", gridTemplateColumns: "repeat(12, 1fr)", gap: 2, background: "var(--border)", borderRadius: 20, overflow: "hidden", transitionDelay: "0.1s" }}>
 
         {/* Row 1 */}
         <div style={{ gridColumn: "span 7", background: "var(--bg)", padding: "36px 32px", position: "relative", overflow: "hidden" }}>

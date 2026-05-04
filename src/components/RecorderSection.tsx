@@ -1,6 +1,6 @@
 export default function RecorderSection() {
   return (
-    <section style={{ padding: "80px 40px 120px", maxWidth: 1200, margin: "0 auto" }}>
+    <section className="mobile-section" style={{ padding: "80px 40px 120px", maxWidth: 1200, margin: "0 auto" }}>
       <div className="reveal">
         <div style={{ fontSize: 11, fontFamily: "var(--font-dm-mono)", textTransform: "uppercase", letterSpacing: "0.1em", color: "oklch(0.72 0.18 285)", marginBottom: 20, display: "flex", alignItems: "center", gap: 10 }}>
           <span style={{ display: "block", width: 24, height: 1, background: "oklch(0.72 0.18 285)" }} />
@@ -23,7 +23,7 @@ export default function RecorderSection() {
           <div style={{ width: 10, height: 10, borderRadius: "50%", background: "#ff5f57" }} />
           <div style={{ width: 10, height: 10, borderRadius: "50%", background: "#febc2e" }} />
           <div style={{ width: 10, height: 10, borderRadius: "50%", background: "#28c840" }} />
-          <div style={{ flex: 1, textAlign: "center", fontSize: 12, color: "var(--text-tertiary)", fontFamily: "var(--font-dm-mono)", marginLeft: -50 }}>Screen Recording Preview</div>
+          <div className="recorder-bar-label" style={{ flex: 1, textAlign: "center", fontSize: 12, color: "var(--text-tertiary)", fontFamily: "var(--font-dm-mono)", marginLeft: -50 }}>Screen Recording Preview</div>
           <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11, color: "#ff5f57", fontFamily: "var(--font-dm-mono)" }}>
             <div className="rec-dot" />
             REC
@@ -31,7 +31,7 @@ export default function RecorderSection() {
         </div>
 
         {/* Content */}
-        <div style={{ padding: 32, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+        <div className="recorder-grid" style={{ padding: 32, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
           {/* Left: what recorder sees */}
           <div>
             <p style={{ fontSize: 11, fontFamily: "var(--font-dm-mono)", color: "var(--text-tertiary)", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: 16 }}>What the recording captures</p>
