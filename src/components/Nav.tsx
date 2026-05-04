@@ -66,6 +66,7 @@ export default function Nav() {
         </a>
         <a
           href="#download"
+          className="nav-download"
           style={{
             background: "linear-gradient(135deg, oklch(0.72 0.22 285), oklch(0.58 0.28 310))",
             color: "white", fontSize: 13.5, fontWeight: 500,

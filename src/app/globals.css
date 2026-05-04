@@ -19,7 +19,7 @@
   --radius-sm: 10px;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   background: var(--bg);
@@ -148,6 +148,7 @@ body::before {
   .nav-inner { padding: 0 20px !important; }
   .nav-links-desktop { display: none !important; }
   .nav-github { display: none !important; }
+  .nav-download { padding: 9px 14px !important; box-shadow: none !important; }
 
   /* Section horizontal padding */
   .mobile-section {
