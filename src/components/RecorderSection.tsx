@@ -42,7 +42,7 @@ export default function RecorderSection() {
             </div>
             <div style={{ marginTop: 24, padding: 16, background: "rgba(255,95,87,0.05)", border: "1px solid rgba(255,95,87,0.15)", borderRadius: 10 }}>
               <div style={{ fontSize: 11, color: "rgba(255,95,87,0.7)", fontFamily: "var(--font-dm-mono)", letterSpacing: "0.05em", marginBottom: 6 }}>OVERLAY NOT VISIBLE IN RECORDING</div>
-              <div style={{ fontSize: 13, color: "var(--text-tertiary)", lineHeight: 1.6 }}>The BlindSpot overlay is completely absent from the captured frames. Viewers see only the underlying application.</div>
+              <div style={{ fontSize: 13, color: "var(--text-tertiary)", lineHeight: 1.6 }}>BlindSpot's overlay is absent from every captured frame. Observers see only the underlying application.</div>
             </div>
           </div>
 

@@ -17,7 +17,10 @@ export default function Footer() {
           <li key={label}><a href={href} target="_blank" rel="noreferrer" style={{ color: "var(--text-tertiary)", textDecoration: "none", fontSize: 13 }}>{label}</a></li>
         ))}
       </ul>
-      <div style={{ fontSize: 12, color: "var(--text-tertiary)", fontFamily: "var(--font-dm-mono)" }}>© 2026 BlindSpot</div>
+      <div style={{ fontSize: 12, color: "var(--text-tertiary)", fontFamily: "var(--font-dm-mono)", textAlign: "right", lineHeight: 1.8 }}>
+        <div>© 2026 BlindSpot</div>
+        <div style={{ color: "rgba(255,255,255,0.18)" }}>Released Jan 2026 · Updated May 2026</div>
+      </div>
     </footer>
   );
 }

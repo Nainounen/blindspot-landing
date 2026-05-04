@@ -74,7 +74,7 @@ export default function CTA() {
         </div>
 
         <p style={{ marginTop: 32, fontSize: 13, color: "var(--text-tertiary)", fontFamily: "var(--font-dm-sans)" }}>
-          First launch: right-click → Open to bypass Gatekeeper (one-time only)
+          First launch only: right-click the app, choose Open, and dismiss the Gatekeeper prompt.
         </p>
       </div>
     </section>

@@ -1,0 +1,30 @@
+# BlindSpot
+
+> BlindSpot is a free, open-source macOS app that delivers AI answers through a floating overlay invisible to every screen recorder. The overlay is excluded from screen capture at the macOS compositor level via NSWindowSharingNone — not CSS tricks, not watermarks, but genuine absence from the frame buffer.
+
+## What it does
+
+- Select any text in any macOS app, press ⌘⇧Space, and get an AI answer instantly
+- The floating overlay is completely absent from screen recordings, screenshots, and screen shares
+- Works across all apps via the macOS Accessibility API (browsers, terminals, PDFs, native apps)
+- Supports OpenAI, Anthropic, Gemini, and local Ollama models; switch providers without restarting
+- API keys stored at ~/.config/blind-spot/keys/ with Unix permissions 600 — no cloud sync, no telemetry, no account
+
+## How the invisibility works
+
+BlindSpot's overlay window sets NSWindowSharingNone at the macOS window server level. This excludes the window from the frame buffer before any recording tool — Zoom, QuickTime, OBS, or any other — can access it. The result is that the overlay never appears in any recording or screen share, regardless of what software the observer uses.
+
+## Key facts
+
+- License: MIT (free and open source)
+- Platform: macOS 14 Sonoma or later — universal binary (Apple Silicon + Intel)
+- Install: brew tap Nainounen/blindspot && brew install --cask blindspot
+- Source: https://github.com/Nainounen/blind-spot
+- Releases: https://github.com/Nainounen/blind-spot/releases/latest
+
+## Supported AI providers
+
+- OpenAI (GPT models)
+- Anthropic (Claude models)
+- Google Gemini
+- Ollama (local models, zero API cost)

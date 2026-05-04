@@ -71,7 +71,7 @@ export default function Features() {
           <div style={{ width: 40, height: 40, background: "rgba(255,255,255,0.05)", border: "1px solid var(--border)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, marginBottom: 20 }}>⟡</div>
           <div style={{ fontFamily: "var(--font-sora)", fontSize: 18, fontWeight: 600, letterSpacing: "-0.03em", color: "var(--text-primary)", marginBottom: 10 }}>System prompts</div>
           <div style={{ fontSize: 14, color: "var(--text-secondary)", lineHeight: 1.7, fontWeight: 300 }}>
-            Give the AI a fixed role or knowledge base. Drop a <strong style={{ color: "var(--text-primary)", fontWeight: 500 }}>.txt</strong> file in the prompts folder and pass its name at launch.
+            Assign the AI a fixed role or custom context. Drop a <strong style={{ color: "var(--text-primary)", fontWeight: 500 }}>.txt</strong> file in the prompts folder and pass its name at launch.
           </div>
           <div style={{ marginTop: 20, background: "rgba(255,255,255,0.04)", border: "1px solid var(--border)", borderRadius: 10, padding: "14px 16px", fontFamily: "var(--font-dm-mono)", fontSize: 12, color: "var(--text-secondary)", lineHeight: 1.8 }}>
             <span style={{ color: "var(--text-tertiary)" }}># ~/.config/blind-spot/prompts/</span><br />

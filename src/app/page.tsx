@@ -4,6 +4,7 @@ import MockupSection from "@/components/MockupSection";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
 import RecorderSection from "@/components/RecorderSection";
+import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -25,6 +26,8 @@ export default function Home() {
         <Features />
         <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, transparent, var(--border), transparent)" }} />
         <RecorderSection />
+        <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, transparent, var(--border), transparent)" }} />
+        <FAQ />
         <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, transparent, var(--border), transparent)" }} />
         <CTA />
       </main>
