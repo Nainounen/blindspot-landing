@@ -1,26 +1,144 @@
 @import "tailwindcss";
 
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #080808;
+  --surface: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.08);
+  --border-strong: rgba(255,255,255,0.14);
+  --text-primary: rgba(255,255,255,0.94);
+  --text-secondary: rgba(255,255,255,0.48);
+  --text-tertiary: rgba(255,255,255,0.28);
+  --accent: oklch(0.72 0.22 285);
+  --accent-dim: oklch(0.72 0.22 285 / 0.15);
+  --accent-glow: oklch(0.72 0.22 285 / 0.35);
+  --cyan: oklch(0.72 0.18 215);
+  --cyan-dim: oklch(0.72 0.18 215 / 0.12);
+  --radius: 16px;
+  --radius-sm: 10px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -40px) scale(1.05); }
+  66% { transform: translate(-20px, 30px) scale(0.95); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.85); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateX(-50%) translateY(-12px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.mesh {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.18;
+  animation: float 20s ease-in-out infinite;
+}
+.mesh-1 {
+  width: 800px; height: 800px;
+  background: oklch(0.55 0.28 285);
+  top: -200px; left: -200px;
+  animation-delay: 0s;
+}
+.mesh-2 {
+  width: 600px; height: 600px;
+  background: oklch(0.55 0.22 215);
+  bottom: 20%; right: -100px;
+  animation-delay: -7s;
+}
+.mesh-3 {
+  width: 500px; height: 500px;
+  background: oklch(0.50 0.25 320);
+  top: 50%; left: 40%;
+  animation-delay: -13s;
+  opacity: 0.1;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px; height: 14px;
+  background: oklch(0.72 0.22 285);
+  border-radius: 1px;
+  vertical-align: middle;
+  animation: blink 1s ease-in-out infinite;
+  margin-left: 1px;
+}
+
+.response-dot {
+  width: 5px; height: 5px;
+  background: oklch(0.72 0.22 285);
+  border-radius: 50%;
+  box-shadow: 0 0 6px oklch(0.72 0.22 285);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.rec-dot {
+  width: 6px; height: 6px;
+  background: #ff5f57;
+  border-radius: 50%;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.invisible-dot {
+  width: 6px; height: 6px;
+  background: #2dd55b;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #2dd55b;
+}
+
+.hero-animate { animation: fadeUp 0.7s ease both; }
+.hero-animate-2 { animation: fadeUp 0.7s ease 0.12s both; }
+.hero-animate-3 { animation: fadeUp 0.7s ease 0.22s both; }
+.hero-animate-4 { animation: fadeUp 0.7s ease 0.32s both; }
+.hero-animate-5 { animation: fadeUp 0.7s ease 0.42s both; }
+.hotkey-animate { animation: fadeDown 1s ease 1.5s both; }
