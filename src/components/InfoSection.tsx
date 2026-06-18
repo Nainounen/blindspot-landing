@@ -62,7 +62,7 @@ export default function InfoSection() {
             }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <div style={{ width: 24, height: 24, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <Image src={p.logo} alt={p.name} width={20} height={20} style={{ objectFit: "contain", filter: "brightness(0.8)" }} />
+                  <Image src={p.logo} alt={p.name} width={20} height={20} style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }} />
                 </div>
                 <span style={{ fontFamily: "var(--font-dm-sans)", fontSize: 14, color: "var(--text-primary)", fontWeight: 500 }}>{p.name}</span>
               </div>
