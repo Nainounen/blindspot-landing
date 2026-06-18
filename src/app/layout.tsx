@@ -88,7 +88,7 @@ const jsonLd = [
     "@type": "SoftwareApplication",
     name: "BlindSpot",
     applicationCategory: "UtilitiesApplication",
-    operatingSystem: "macOS 14+",
+    operatingSystem: "macOS 26+",
     offers: {
       "@type": "Offer",
       price: "0",

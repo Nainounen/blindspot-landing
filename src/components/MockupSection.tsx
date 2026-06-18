@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 const responses = [
   "This process is called **oxidative phosphorylation**. The electron transport chain creates a proton gradient across the inner mitochondrial membrane, which drives ATP synthase — producing ATP from ADP and inorganic phosphate.",
-  "In simpler terms: mitochondria act as the cell's power plants. They take fuel (glucose, fatty acids) and oxygen, and convert them into ATP — the molecule every biological process runs on.",
+  "A **closure** captures variables from its enclosing scope and keeps them alive even after that scope has exited. In JavaScript, every function forms a closure over the variables in the scope where it was defined.",
 ];
 
 function renderBold(text: string) {
@@ -99,7 +99,7 @@ export default function MockupSection() {
             textAlign: "left", fontFamily: "var(--font-dm-sans)",
           }}>
             The mitochondria is the powerhouse of the cell. It produces ATP through oxidative phosphorylation, converting{" "}
-            <span style={{ background: "oklch(0.72 0.22 285 / 0.2)", borderRadius: 3, color: "oklch(0.85 0.16 285)", padding: "1px 3px" }}>
+            <span style={{ background: "var(--accent-dim)", borderRadius: 3, color: "var(--text-primary)", padding: "1px 3px" }}>
               nutrients and oxygen into usable chemical energy that fuels virtually every cellular process
             </span>
             . Without it, complex life would be impossible.
@@ -142,18 +142,6 @@ export default function MockupSection() {
               </div>
             </div>
 
-            {/* Invisible badge */}
-            <div style={{
-              position: "absolute", bottom: -18, right: 20,
-              background: "rgba(8,8,8,0.9)", border: "1px solid var(--border)",
-              borderRadius: 100, padding: "5px 12px",
-              fontSize: 11, color: "var(--text-tertiary)",
-              fontFamily: "var(--font-dm-mono)",
-              display: "flex", alignItems: "center", gap: 6,
-            }}>
-              <div className="invisible-dot" />
-              invisible to screen recorders
-            </div>
           </div>
         </div>
       </div>

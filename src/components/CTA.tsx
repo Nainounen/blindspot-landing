@@ -17,7 +17,7 @@ export default function CTA() {
         position: "absolute", top: "50%", left: "50%",
         transform: "translate(-50%, -50%)",
         width: 600, height: 400,
-        background: "radial-gradient(ellipse, oklch(0.55 0.25 285 / 0.2), transparent 70%)",
+        background: "radial-gradient(ellipse, oklch(0.55 0.25 285 / 0.15), transparent 70%)",
         pointerEvents: "none", filter: "blur(40px)",
       }} />
 
@@ -29,7 +29,7 @@ export default function CTA() {
           Get BlindSpot<br />in 30 seconds.
         </h2>
         <p style={{ fontSize: 16, color: "var(--text-secondary)", fontWeight: 300, marginBottom: 48, letterSpacing: "-0.01em" }}>
-          macOS 14 Sonoma or later · Universal binary (Apple Silicon + Intel)
+          macOS 26 or later · Universal binary (Apple Silicon + Intel) · Signed & notarized
         </p>
 
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, flexWrap: "wrap" }}>
@@ -43,7 +43,6 @@ export default function CTA() {
               fontFamily: "var(--font-dm-sans)", fontSize: 16, fontWeight: 500,
               border: "none", borderRadius: 12, padding: "16px 32px",
               textDecoration: "none",
-              boxShadow: "0 0 0 1px rgba(255,255,255,0.1), 0 8px 32px rgba(0,0,0,0.4)",
             }}
           >
             ↓&nbsp; Download DMG
@@ -72,10 +71,6 @@ export default function CTA() {
             )}
           </button>
         </div>
-
-        <p style={{ marginTop: 32, fontSize: 13, color: "var(--text-tertiary)", fontFamily: "var(--font-dm-sans)" }}>
-          First launch only: right-click the app, choose Open, and dismiss the Gatekeeper prompt.
-        </p>
       </div>
     </section>
   );

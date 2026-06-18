@@ -9,6 +9,9 @@ export default function RecorderSection() {
         <h2 style={{ fontFamily: "var(--font-sora)", fontSize: "clamp(36px, 5vw, 58px)", fontWeight: 700, letterSpacing: "-0.04em", lineHeight: 1.05, color: "var(--text-primary)", marginBottom: 48, maxWidth: 600 }}>
           What they see<span style={{ color: "var(--text-secondary)", fontWeight: 300 }}> vs what you see.</span>
         </h2>
+        <p style={{ fontSize: 15, color: "var(--text-secondary)", fontWeight: 300, maxWidth: 540, lineHeight: 1.7, marginBottom: 0, marginTop: -24 }}>
+          The overlay uses <strong style={{ color: "var(--text-primary)", fontWeight: 500 }}>NSWindowSharingNone</strong> — excluded from the frame buffer at the macOS compositor level, before any recording tool can access it.
+        </p>
       </div>
 
       <div className="reveal" style={{
@@ -37,7 +40,7 @@ export default function RecorderSection() {
             <p style={{ fontSize: 11, fontFamily: "var(--font-dm-mono)", color: "var(--text-tertiary)", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: 16 }}>What the recording captures</p>
             <div style={{ fontSize: 13.5, color: "var(--text-secondary)", lineHeight: 1.8, fontFamily: "var(--font-dm-sans)" }}>
               The mitochondria is the powerhouse of the cell. It produces ATP through oxidative phosphorylation, converting{" "}
-              <span style={{ background: "oklch(0.72 0.22 285 / 0.2)", borderRadius: 3, color: "oklch(0.85 0.16 285)", padding: "1px 3px" }}>nutrients and oxygen into usable chemical energy</span>{" "}
+              <span style={{ background: "var(--accent-dim)", borderRadius: 3, color: "var(--text-primary)", padding: "1px 3px" }}>nutrients and oxygen into usable chemical energy</span>{" "}
               that fuels virtually every cellular process.
             </div>
             <div style={{ marginTop: 24, padding: 16, background: "rgba(255,95,87,0.05)", border: "1px solid rgba(255,95,87,0.15)", borderRadius: 10 }}>
