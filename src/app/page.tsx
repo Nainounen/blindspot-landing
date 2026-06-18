@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import MockupSection from "@/components/MockupSection";
 import RecorderSection from "@/components/RecorderSection";
+import InfoSection from "@/components/InfoSection";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -36,6 +37,9 @@ export default async function Home() {
         <MockupSection />
         <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, transparent, var(--border), transparent)" }} />
         <RecorderSection />
+        <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, transparent, var(--border), transparent)" }} />
+        <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, transparent, var(--border), transparent)" }} />
+        <InfoSection />
         <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, transparent, var(--border), transparent)" }} />
         <CTA />
       </main>
